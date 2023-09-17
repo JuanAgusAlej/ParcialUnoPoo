@@ -1,0 +1,50 @@
+<mxfile host="65bd71144e">
+    <diagram id="v8uBU-et4ggs2e9ZE_d8" name="Page-1">
+        <mxGraphModel dx="1479" dy="445" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="16" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+                    <mxGeometry x="-160" y="40" width="1020" height="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Empleado&#10;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="70" width="340" height="212" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="-sueldo: Doble&#10;- id: int&#10;- name: string" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="2">
+                    <mxGeometry y="26" width="340" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="+Empleado(in id:int, in sueldo:double, in name:string): void&#10;+setSueldo(in valor:double)&#10;+getSueldo(): double&#10;+setName(in name:string): void&#10;+getName(): string&#10;+getId(): int&#10;+ averiguarSueldo(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="2">
+                    <mxGeometry y="90" width="340" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Cajero" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+                    <mxGeometry x="-120" y="380" width="310" height="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="+Cajero(in id:int, in sueldo:double, in name:string): void&#10;+averiguarSueldo(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="6">
+                    <mxGeometry y="26" width="310" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Mozo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="1">
+                    <mxGeometry x="540" y="370" width="310" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="+propina: double" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="10">
+                    <mxGeometry y="26" width="310" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="+ Mozo(in id:int, in sueldo:double, in name:string): void&#10;+setPropina(in valo:double): void&#10;+getPropina(): double&#10;+averiguarSueldo(): void" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fillColor=#f5f5f5;" vertex="1" parent="10">
+                    <mxGeometry y="52" width="310" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;strokeColor=#666666;fontColor=none;fillColor=#f5f5f5;noLabel=1;" edge="1" parent="1" source="10" target="2">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="370" y="380" as="sourcePoint"/>
+                        <mxPoint x="500" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.906;exitY=0.012;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#666666;fontColor=none;fillColor=#f5f5f5;noLabel=1;" edge="1" parent="1" source="6" target="2">
+                    <mxGeometry x="0.3219" y="-56" width="160" relative="1" as="geometry">
+                        <mxPoint x="453" y="390" as="sourcePoint"/>
+                        <mxPoint x="357.74226804123714" y="306" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
